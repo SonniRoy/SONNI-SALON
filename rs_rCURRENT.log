@@ -1,0 +1,249 @@
+[2021-11-30T03:11:34.418+07:00] INFO "app": init logging.
+[2021-11-30T03:11:34.420+07:00] INFO "app": created new tunnel.
+[2021-11-30T03:11:34.423+07:00] INFO "app": app: reg id: 955b1980-3ea1-48de-9b2d-2d6864f3e7b1, public key: 3LXhLQajyVzLMeiRkGhExiFxbY36dkxIVvVil723+jw=
+[2021-11-30T03:11:34.429+07:00] INFO "app": finished set_tunnel_params().
+[2021-11-30T03:11:35.301+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:11:35.301+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:11:35.301+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:11:35.301+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:11:35.301+07:00] INFO "app": calling create_udp_socket() with ipv4: 162.159.192.4, ipv6: 2606:4700:d0::a29f:c004, port: 2408
+[2021-11-30T03:11:35.301+07:00] INFO "app": creating IPv6 socket: [2606:4700:d0::a29f:c004]:2408
+[2021-11-30T03:11:35.314+07:00] INFO "app": connected IPv6 socket: [2606:4700:d0::a29f:c004]:2408
+[2021-11-30T03:11:35.314+07:00] INFO "app": creating IPv4 socket: 162.159.192.4:2408
+[2021-11-30T03:11:35.316+07:00] INFO "app": connected IPv4 socket: 162.159.192.4:2408
+[2021-11-30T03:11:35.316+07:00] INFO "app": running do_happy_eyeball_race()
+[2021-11-30T03:11:35.316+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:54266, fd: 49 }
+[2021-11-30T03:11:35.316+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: 192.168.1.3:46475, fd: 60 }
+[2021-11-30T03:11:35.318+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: 192.168.1.3:46475, fd: 60 }
+[2021-11-30T03:11:35.319+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:54266, fd: 49 }
+[2021-11-30T03:11:35.320+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:35.321+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:35.398+07:00] ERROR "app": recv error in do_happy_eyeballs(), socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:54266, fd: 49 }, error: 13
+[2021-11-30T03:11:35.616+07:00] INFO "app": set read time out to 500ms for socket: UdpSocket { addr: 192.168.1.3:46475, fd: 60 }
+[2021-11-30T03:11:35.616+07:00] INFO "app": Won race, socket: UdpSocket { addr: 192.168.1.3:46475, fd: 60 }, elapsed: 296974 usec
+[2021-11-30T03:11:35.616+07:00] INFO "app": successful handshake response for port 2408.
+[2021-11-30T03:11:35.616+07:00] INFO "app": Notified threads about valid network in handle_network_change().
+[2021-11-30T03:11:35.616+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:11:35.616+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:11:35.869+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:11:35.870+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:11:35.871+07:00] INFO "app": starting virtual interface read thread.
+[2021-11-30T03:11:35.871+07:00] INFO "app": starting udp read thread with socket: Mutex { data: Some(UdpSocket { addr: 192.168.1.3:46475, fd: 60 }), poisoned: false, .. }
+[2021-11-30T03:11:35.871+07:00] INFO "app": alt udp socket empty, not starting alt udp thread.
+[2021-11-30T03:11:35.871+07:00] INFO "app": starting ticker thread.
+[2021-11-30T03:11:35.871+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:11:35.872+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:11:35.872+07:00] INFO "tic": using udp socket UdpSocket { addr: 192.168.1.3:46475, fd: 46 } in ticker()
+[2021-11-30T03:11:35.872+07:00] INFO "tic": stats: tx: 0B, rx: 0B, loss: 0.0%, rtt: -1
+[2021-11-30T03:11:35.873+07:00] INFO "udp": using udp socket UdpSocket { addr: 192.168.1.3:46475, fd: 63 } in udp_read()
+[2021-11-30T03:11:35.873+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:11:35.875+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:11:35.875+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:11:37.398+07:00] INFO "app": Lost race: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:54266, fd: 49 }, not starting alt udp thread
+[2021-11-30T03:11:40.373+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:11:40.964+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:45.966+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:11:45.969+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:50.970+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:11:50.971+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:55.972+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:11:55.974+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:11:56.184+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:11:56.186+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:11:56.187+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:11:58.476+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:12:04.008+07:00] INFO "app": running stop_happy_eyeball_race().
+[2021-11-30T03:12:04.008+07:00] INFO "app": stopping happy eyeball race.
+[2021-11-30T03:12:04.027+07:00] INFO "app": stopping tunnel.
+[2021-11-30T03:12:04.027+07:00] INFO "app": calling virtual_interface.stop().
+[2021-11-30T03:12:04.027+07:00] INFO "app": calling edge_connection.stop().
+[2021-11-30T03:12:04.027+07:00] INFO "app": shutdown udp socket: UdpSocket { addr: 192.168.1.3:46475, fd: 60 }
+[2021-11-30T03:12:04.027+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:12:04.027+07:00] INFO "app": waiting for main threads to terminate.
+[2021-11-30T03:12:04.027+07:00] INFO "udp": stopping udp read thread.
+[2021-11-30T03:12:04.483+07:00] INFO "tic": stopping ticker thread.
+[2021-11-30T03:12:04.863+07:00] INFO "vif": stopping virtual interface read thread.
+[2021-11-30T03:12:04.868+07:00] INFO "app": finished stop_tunnel().
+[2021-11-30T03:12:07.787+07:00] INFO "app": init logging.
+[2021-11-30T03:12:07.788+07:00] INFO "app": created new tunnel.
+[2021-11-30T03:12:07.789+07:00] INFO "app": app: reg id: 955b1980-3ea1-48de-9b2d-2d6864f3e7b1, public key: FwvTIOq2ohDbsB0uhRMo+GTY5LuJYoliZPTFrx91jG4=
+[2021-11-30T03:12:07.791+07:00] INFO "app": finished set_tunnel_params().
+[2021-11-30T03:12:07.794+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:12:07.794+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:12:07.794+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:12:07.794+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:12:07.794+07:00] INFO "app": calling create_udp_socket() with ipv4: 162.159.192.8, ipv6: 2606:4700:d0::a29f:c008, port: 2408
+[2021-11-30T03:12:07.794+07:00] INFO "app": creating IPv6 socket: [2606:4700:d0::a29f:c008]:2408
+[2021-11-30T03:12:07.795+07:00] INFO "app": connected IPv6 socket: [2606:4700:d0::a29f:c008]:2408
+[2021-11-30T03:12:07.795+07:00] INFO "app": creating IPv4 socket: 162.159.192.8:2408
+[2021-11-30T03:12:07.796+07:00] INFO "app": connected IPv4 socket: 162.159.192.8:2408
+[2021-11-30T03:12:07.796+07:00] INFO "app": running do_happy_eyeball_race()
+[2021-11-30T03:12:07.796+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:48362, fd: 100 }
+[2021-11-30T03:12:07.796+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: 192.168.1.3:40018, fd: 101 }
+[2021-11-30T03:12:07.844+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:48362, fd: 100 }
+[2021-11-30T03:12:08.381+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:12:07.844+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: 192.168.1.3:40018, fd: 101 }
+[2021-11-30T03:12:08.383+07:00] ERROR "app": recv error in do_happy_eyeballs(), socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:48362, fd: 100 }, error: 13
+[2021-11-30T03:12:08.383+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:12:08.680+07:00] INFO "app": set read time out to 500ms for socket: UdpSocket { addr: 192.168.1.3:40018, fd: 101 }
+[2021-11-30T03:12:08.741+07:00] INFO "app": Won race, socket: UdpSocket { addr: 192.168.1.3:40018, fd: 101 }, elapsed: 297870 usec
+[2021-11-30T03:12:08.741+07:00] INFO "app": successful handshake response for port 2408.
+[2021-11-30T03:12:08.742+07:00] INFO "app": Notified threads about valid network in handle_network_change().
+[2021-11-30T03:12:08.742+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:12:08.742+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:12:09.090+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:12:09.423+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:12:09.424+07:00] INFO "app": starting virtual interface read thread.
+[2021-11-30T03:12:09.424+07:00] INFO "app": starting udp read thread with socket: Mutex { data: Some(UdpSocket { addr: 192.168.1.3:40018, fd: 101 }), poisoned: false, .. }
+[2021-11-30T03:12:09.424+07:00] INFO "app": alt udp socket empty, not starting alt udp thread.
+[2021-11-30T03:12:09.424+07:00] INFO "app": starting ticker thread.
+[2021-11-30T03:12:09.424+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:12:09.424+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:12:09.426+07:00] INFO "tic": using udp socket UdpSocket { addr: 192.168.1.3:40018, fd: 85 } in ticker()
+[2021-11-30T03:12:09.426+07:00] INFO "tic": stats: tx: 0B, rx: 0B, loss: 0.0%, rtt: -1
+[2021-11-30T03:12:09.427+07:00] INFO "udp": using udp socket UdpSocket { addr: 192.168.1.3:40018, fd: 90 } in udp_read()
+[2021-11-30T03:12:09.427+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:12:09.428+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:12:09.428+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:12:10.383+07:00] INFO "app": Lost race: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:48362, fd: 100 }, not starting alt udp thread
+[2021-11-30T03:12:31.947+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:12:55.970+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:13:09.487+07:00] INFO "tic": stats: tx: 35940B, rx: 129943B, loss: 50.759876%, rtt: 1044
+[2021-11-30T03:13:19.999+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:13:37.024+07:00] INFO "tic": boringtun: "HANDSHAKE(KEEPALIVE + REKEY_TIMEOUT), ()"
+[2021-11-30T03:13:37.026+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:13:37.237+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:13:37.239+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:13:37.239+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:13:44.031+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:13:52.041+07:00] INFO "tic": boringtun: "HANDSHAKE(KEEPALIVE + REKEY_TIMEOUT), ()"
+[2021-11-30T03:13:52.042+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:13:57.049+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:13:57.050+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:14:02.051+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:14:02.053+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:14:07.053+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:14:07.055+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:14:07.254+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:14:07.256+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:14:07.256+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:14:08.054+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:14:09.557+07:00] INFO "tic": stats: tx: 42489B, rx: 221395B, loss: 21.153847%, rtt: 200
+[2021-11-30T03:14:32.093+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:14:56.122+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:15:09.133+07:00] INFO "tic": boringtun: "SESSION_EXPIRED(REJECT_AFTER_TIME), ()"
+[2021-11-30T03:15:09.633+07:00] INFO "tic": stats: tx: 44860B, rx: 223005B, loss: 53.035713%, rtt: 200
+[2021-11-30T03:15:20.145+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:15:42.168+07:00] INFO "tic": boringtun: "HANDSHAKE(KEEPALIVE + REKEY_TIMEOUT), ()"
+[2021-11-30T03:15:42.169+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:15:47.171+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:15:47.173+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:15:52.176+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:15:52.179+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:15:52.390+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:15:52.392+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:15:52.393+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:15:52.676+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:16:09.690+07:00] INFO "tic": stats: tx: 49887B, rx: 232039B, loss: 55.980553%, rtt: 213
+[2021-11-30T03:16:16.194+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:16:37.213+07:00] INFO "tic": boringtun: "SESSION_EXPIRED(REJECT_AFTER_TIME), ()"
+[2021-11-30T03:16:40.214+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:17:04.227+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:17:07.229+07:00] INFO "tic": boringtun: "SESSION_EXPIRED(REJECT_AFTER_TIME), ()"
+[2021-11-30T03:17:09.730+07:00] INFO "tic": stats: tx: 127447B, rx: 340532B, loss: 52.41636%, rtt: 213
+[2021-11-30T03:17:28.236+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:17:52.263+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_AFTER_TIME (on send)), ()"
+[2021-11-30T03:17:52.268+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:17:52.468+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:17:52.469+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:17:52.469+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:17:52.763+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:18:09.769+07:00] INFO "tic": stats: tx: 252222B, rx: 585654B, loss: 53.94469%, rtt: 201
+[2021-11-30T03:18:16.276+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:18:39.793+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:18:51.802+07:00] INFO "tic": boringtun: "SESSION_EXPIRED(REJECT_AFTER_TIME), ()"
+[2021-11-30T03:19:03.809+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:19:09.813+07:00] INFO "tic": stats: tx: 325259B, rx: 744313B, loss: 51.789974%, rtt: 201
+[2021-11-30T03:19:27.827+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:19:51.848+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_AFTER_TIME (on send)), ()"
+[2021-11-30T03:19:51.894+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:19:57.356+07:00] INFO "tic": boringtun: "HANDSHAKE(REKEY_TIMEOUT), ()"
+[2021-11-30T03:19:57.358+07:00] INFO "tic": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:19:57.557+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:19:57.558+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:19:57.559+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:19:57.856+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:20:09.862+07:00] INFO "tic": stats: tx: 402597B, rx: 867093B, loss: 49.78641%, rtt: 200
+[2021-11-30T03:20:21.868+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:20:45.885+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:20:51.887+07:00] INFO "tic": boringtun: "SESSION_EXPIRED(REJECT_AFTER_TIME), ()"
+[2021-11-30T03:21:09.901+07:00] INFO "tic": stats: tx: 449938B, rx: 929290B, loss: 47.954548%, rtt: 200
+[2021-11-30T03:21:09.902+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:21:33.936+07:00] INFO "tic": boringtun: "KEEPALIVE(PERSISTENT_KEEPALIVE), ()"
+[2021-11-30T03:21:53.931+07:00] INFO "app": running stop_happy_eyeball_race().
+[2021-11-30T03:21:53.938+07:00] INFO "app": stopping happy eyeball race.
+[2021-11-30T03:21:53.938+07:00] INFO "app": stopping tunnel.
+[2021-11-30T03:21:53.938+07:00] INFO "app": calling virtual_interface.stop().
+[2021-11-30T03:21:53.938+07:00] INFO "app": calling edge_connection.stop().
+[2021-11-30T03:21:53.951+07:00] INFO "tic": stopping ticker thread.
+[2021-11-30T03:21:53.938+07:00] INFO "app": shutdown udp socket: UdpSocket { addr: 192.168.1.3:40018, fd: 101 }
+[2021-11-30T03:21:53.960+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:21:53.960+07:00] INFO "app": waiting for main threads to terminate.
+[2021-11-30T03:21:53.960+07:00] INFO "udp": stopping udp read thread.
+[2021-11-30T03:21:54.344+07:00] INFO "vif": stopping virtual interface read thread.
+[2021-11-30T03:21:54.505+07:00] INFO "app": finished stop_tunnel().
+[2021-11-30T03:54:35.637+07:00] INFO "app": init logging.
+[2021-11-30T03:54:35.667+07:00] INFO "app": created new tunnel.
+[2021-11-30T03:54:35.818+07:00] INFO "app": app: reg id: 955b1980-3ea1-48de-9b2d-2d6864f3e7b1, public key: FwvTIOq2ohDbsB0uhRMo+GTY5LuJYoliZPTFrx91jG4=
+[2021-11-30T03:54:35.820+07:00] INFO "app": finished set_tunnel_params().
+[2021-11-30T03:54:35.869+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:54:35.869+07:00] INFO "app": starting handle_network_change().
+[2021-11-30T03:54:35.870+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:54:35.870+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:54:35.870+07:00] INFO "app": calling create_udp_socket() with ipv4: 162.159.192.8, ipv6: 2606:4700:d0::a29f:c008, port: 2408
+[2021-11-30T03:54:35.870+07:00] INFO "app": creating IPv6 socket: [2606:4700:d0::a29f:c008]:2408
+[2021-11-30T03:54:35.888+07:00] INFO "app": connected IPv6 socket: [2606:4700:d0::a29f:c008]:2408
+[2021-11-30T03:54:35.894+07:00] INFO "app": creating IPv4 socket: 162.159.192.8:2408
+[2021-11-30T03:54:35.895+07:00] INFO "app": connected IPv4 socket: 162.159.192.8:2408
+[2021-11-30T03:54:35.895+07:00] INFO "app": running do_happy_eyeball_race()
+[2021-11-30T03:54:35.895+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:49366, fd: 101 }
+[2021-11-30T03:54:35.896+07:00] INFO "app": set read time out to 4s in do_happy_eyeballs(): UdpSocket { addr: 192.168.1.3:52847, fd: 103 }
+[2021-11-30T03:54:35.897+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:49366, fd: 101 }
+[2021-11-30T03:54:35.899+07:00] INFO "app": Running happy eyeball race iteration: 0 for socket: UdpSocket { addr: 192.168.1.3:52847, fd: 103 }
+[2021-11-30T03:54:35.920+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:54:35.922+07:00] INFO "app": boringtun: "Sending handshake_initiation, ()"
+[2021-11-30T03:54:35.977+07:00] ERROR "app": recv error in do_happy_eyeballs(), socket: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:49366, fd: 101 }, error: 13
+[2021-11-30T03:54:36.127+07:00] INFO "app": set read time out to 500ms for socket: UdpSocket { addr: 192.168.1.3:52847, fd: 103 }
+[2021-11-30T03:54:36.127+07:00] INFO "app": Won race, socket: UdpSocket { addr: 192.168.1.3:52847, fd: 103 }, elapsed: 226444 usec
+[2021-11-30T03:54:36.127+07:00] INFO "app": successful handshake response for port 2408.
+[2021-11-30T03:54:36.127+07:00] INFO "app": Notified threads about valid network in handle_network_change().
+[2021-11-30T03:54:36.128+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:54:36.128+07:00] INFO "app": finished handle_network_change().
+[2021-11-30T03:54:36.270+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:54:36.270+07:00] INFO "app": starting start_tunnel().
+[2021-11-30T03:54:36.271+07:00] INFO "app": starting virtual interface read thread.
+[2021-11-30T03:54:36.273+07:00] INFO "app": starting udp read thread with socket: Mutex { data: Some(UdpSocket { addr: 192.168.1.3:52847, fd: 103 }), poisoned: false, .. }
+[2021-11-30T03:54:36.477+07:00] INFO "app": alt udp socket empty, not starting alt udp thread.
+[2021-11-30T03:54:36.477+07:00] INFO "app": starting ticker thread.
+[2021-11-30T03:54:36.477+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:54:36.477+07:00] INFO "app": finished start_tunnel().
+[2021-11-30T03:54:36.478+07:00] INFO "tic": using udp socket UdpSocket { addr: 192.168.1.3:52847, fd: 96 } in ticker()
+[2021-11-30T03:54:36.478+07:00] INFO "tic": stats: tx: 0B, rx: 0B, loss: 0.0%, rtt: -1
+[2021-11-30T03:54:36.478+07:00] INFO "udp": using udp socket UdpSocket { addr: 192.168.1.3:52847, fd: 104 } in udp_read()
+[2021-11-30T03:54:36.478+07:00] INFO "udp": boringtun: "Received handshake_response, ()"
+[2021-11-30T03:54:36.481+07:00] INFO "udp": boringtun: "New session, ()"
+[2021-11-30T03:54:36.482+07:00] INFO "udp": boringtun: "Sending keepalive, ()"
+[2021-11-30T03:54:37.977+07:00] INFO "app": Lost race: UdpSocket { addr: [fe80::ce2d:83ff:fe97:e658]:49366, fd: 101 }, not starting alt udp thread
+[2021-11-30T03:54:45.116+07:00] INFO "app": running stop_happy_eyeball_race().
+[2021-11-30T03:54:45.116+07:00] INFO "app": stopping happy eyeball race.
+[2021-11-30T03:54:45.117+07:00] INFO "app": stopping tunnel.
+[2021-11-30T03:54:45.117+07:00] INFO "app": calling virtual_interface.stop().
+[2021-11-30T03:54:45.117+07:00] INFO "app": calling edge_connection.stop().
+[2021-11-30T03:54:45.117+07:00] INFO "app": shutdown udp socket: UdpSocket { addr: 192.168.1.3:52847, fd: 103 }
+[2021-11-30T03:54:45.222+07:00] INFO "udp": stopping udp read thread.
+[2021-11-30T03:54:45.221+07:00] INFO "app": invalid udp socket in shutdown_sockets().
+[2021-11-30T03:54:45.222+07:00] INFO "app": waiting for main threads to terminate.
+[2021-11-30T03:54:45.482+07:00] INFO "tic": stopping ticker thread.
+[2021-11-30T03:54:45.661+07:00] ERROR "vif": intf read error 22 in intf_read().
+[2021-11-30T03:54:45.661+07:00] INFO "vif": stopping virtual interface read thread.
+[2021-11-30T03:54:45.785+07:00] INFO "app": finished stop_tunnel().
